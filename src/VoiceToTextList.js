@@ -39,7 +39,6 @@ export const VoiceToTextList = () => {
         <button onClick={onStart}>Start</button>
         <button onClick={onStop}>Stop</button>
       </div>
-
       <div>Current story: <p>{transcript}</p></div>
       Story list:
       {
