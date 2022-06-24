@@ -15,8 +15,9 @@ export const VoiceToText = () => {
 
   return (
     <div>
+      <h2>Default</h2>
       <p>Microphone: {listening ? 'on' : 'off'}</p>
-      <button onClick={SpeechRecognition.startListening}>Start</button>
+      <button onClick={() => SpeechRecognition.startListening({ continuous: true })}>Start</button>
       <button onClick={SpeechRecognition.stopListening}>Stop</button>
       <button onClick={resetTranscript}>Reset</button>
       <p>{transcript}</p>
